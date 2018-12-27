@@ -18,7 +18,7 @@ model: RTSP H.264...
 
 
 ___________________
-
+`
 #!/bin/bash
 
 # First row
@@ -30,3 +30,4 @@ screen -dmS camera2 sh -c 'omxplayer --win "960 0 1920 540" rtsp://<USERNAME>:<P
 screen -dmS camera3 sh -c 'omxplayer --win "0 540 960 1080" rtsp://USERNAME:PASSWORD@192.168.x.x:554/cam/realmonitor?channel=3&subtype=0; exec bash'
 #screen -dmS camera4 sh -c 'omxplayer --win "960 540 1920 1080" rtsp://USERNAME:PASSWORD@172.16.x.x:554/cam/realmonitor?channel=4&subtype=0; exec bash'
 
+`
