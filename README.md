@@ -1,6 +1,6 @@
 # ip-rtsp
 common ip camera endpoints
-
+```
 ReoLink RL420
 blue iris:
 model: ... Baseline RTMP
@@ -16,7 +16,7 @@ make: Generic
 model: RTSP H.264...
 /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
 
-
+```
 ___________________
 ```
 #!/bin/bash
