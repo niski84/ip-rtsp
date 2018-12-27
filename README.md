@@ -17,6 +17,10 @@ model: RTSP H.264...
 /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
 
 ```
+install prerequisites:
+
+`sudo apt-get install -y omxplayer screen`
+
 bash script to show sized windows of rtsp streams (ip cam security cam) in a 4 x 4 matrix 
 ```
 #!/bin/bash
