@@ -31,6 +31,8 @@ screen -dmS camera3 sh -c 'omxplayer --win "0 540 960 1080" rtsp://USERNAME:PASS
 #screen -dmS camera4 sh -c 'omxplayer --win "960 540 1920 1080" rtsp://USERNAME:PASSWORD@172.16.x.x:554/cam/realmonitor?channel=4&subtype=0; exec bash'
 
 ```
+to kill all omxplayer windows created in the above bash script:
+```sudo killall omxplayer.bin```
 
 to get this script to show in x windows gui on raspberry pi stretch on boot:
 
