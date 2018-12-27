@@ -17,7 +17,7 @@ model: RTSP H.264...
 /cam/realmonitor?channel=1&subtype=0&unicast=true&proto=Onvif
 
 ```
-___________________
+bash script to show sized windows of rtsp streams (ip cam security cam) in a 4 x 4 matrix 
 ```
 #!/bin/bash
 
@@ -32,7 +32,7 @@ screen -dmS camera3 sh -c 'omxplayer --win "0 540 960 1080" rtsp://USERNAME:PASS
 
 ```
 
-to get this script to show in x windows gui on raspberry pi stretch:
+to get this script to show in x windows gui on raspberry pi stretch on boot:
 
 edit:
 `sudo vi /etc/xdg/lxsession/LXDE-pi/autostart`
