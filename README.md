@@ -21,7 +21,7 @@ install prerequisites:
 
 `sudo apt-get install -y omxplayer screen`
 
-bash script to show sized windows of rtsp streams (ip cam security cam) in a 4 x 4 matrix 
+bash script to show sized windows of rtsp streams (ip cam security cam) in a 4 x 4 matrix (on 1080p monitor) 
 ```
 #!/bin/bash
 
@@ -46,4 +46,17 @@ edit:
 add:
 ```
 @lxterminal -e /home/pi/<bashFile>.sh
+```
+
+
+
+same as above, but for 720p monitor
+```
+screen -dmS camera1 sh -c 'omxplayer --win "0 0 684 387" rtsp://USERNAME:PASSWORD@192.168.x.x/h264Preview_01_main; exec bash'
+
+screen -dmS camera2 sh -c 'omxplayer --win "683 0 1366 387" rtsp://USERNAME:PASSWORD@192.168.x.x/h264Preview_01_main; exec bash'
+
+screen -dmS camera3 sh -c 'omxplayer --win "0 386 684 768" rtsp://USERNAME:PASSWORD@192.168.x.x:554/cam/realmonitor?channel=3&subtype=0; exec bash'
+#screen -dmS camera4 sh -c 'omxplayer --win "684 387 1366 768" rtsp://USERNAME:PASSWORD@172.16.x.x:554/cam/realmonitor?channel=4&subtype=0; exec bash'
+
 ```
