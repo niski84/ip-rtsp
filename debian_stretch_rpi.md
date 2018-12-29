@@ -1,4 +1,4 @@
-mount microsoft formatted ext4 drive:
+mount microsoft formatted exfat drive:
 
 ```
 sudo apt-get install exfat-fuse exfat-utils
