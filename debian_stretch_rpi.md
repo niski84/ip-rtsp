@@ -11,7 +11,9 @@ persist after boot method:
 ```
 vi /etc/fstab
 ```
-add:
+add the following:
+(note: nofail will keep the os from locking you out if the drive fails to mount!
+nonemtpy option will allow drive to be mounted even if their are files in the diretory)
 
 ```
 /dev/sda2 /media/SSD auto defaults,nofail,nonempty  0   0
