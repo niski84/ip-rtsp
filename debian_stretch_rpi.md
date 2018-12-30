@@ -16,3 +16,8 @@ add:
 ```
 /dev/sda2 /media/SSD auto defaults,nofail,nonempty  0   0
 ```
+to keep binary backups of sd card trim and not bloated with deleted files:
+(can be run periodically as cron on mounted file system)
+```
+sudo fstrim -v /
+```
