@@ -23,3 +23,9 @@ to keep binary backups of sd card trim and not bloated with deleted files:
 ```
 sudo fstrim -v /
 ```
+
+if pi loses wifi connectivity, can try restarting the interface:
+```
+sudo systemctl daemon-reload
+sudo systemctl restart dhcpcd
+```
