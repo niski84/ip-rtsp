@@ -20,6 +20,7 @@ nonemtpy option will allow drive to be mounted even if their are files in the di
 ```
 to keep binary backups of sd card trim and not bloated with deleted files:
 (can be run periodically as cron on mounted file system)
+(note: caution, experimental)
 ```
 sudo fstrim -v /
 ```
